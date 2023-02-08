@@ -64,9 +64,9 @@ export default function Orders({order}) {
                     </div>
                     <div>
                         <span>Pizzas</span>
-                        <span>{ order.pizzas.map((pizza) => {
+                        <span>{ order.pizzas.map((pizza, id) => {
                             return (
-                                <div>{pizza.name} {displayPizzaSize(pizza.size)} x{pizza.quantity}</div>
+                                <div key={id}>{pizza.name} {displayPizzaSize(pizza.size)} x{pizza.quantity}</div>
                             )
                         }) }</span>
                     </div>

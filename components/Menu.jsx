@@ -22,7 +22,7 @@ export default function Menu(props) {
                         return null;
                     }
                     return (
-                        <Link href={`./pizza/${pizza.slug.current}`}>
+                        <Link key={id} href={`./pizza/${pizza.slug.current}`}>
                             <div className={css.pizza} key={id}>
                                 <div className={css.imageWrapper}>
                                     <Image

@@ -22,7 +22,7 @@ export default function Hero(props) {
 
                 </div>
                 <span className={css.miniText}>
-                    On our way to send you the best pizza you've ever had!
+                    On our way to send you the best pizza you`ve ever had!
                 </span>
                 <button className={`btn ${css.btn}`}>
                     Get started
