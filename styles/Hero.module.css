@@ -76,6 +76,7 @@
     align-items: center;
     justify-content: center;
     height: 2.5rem;
+    color: white;
 }
 
 .contactUs:hover {
