@@ -66,7 +66,7 @@ export default function Cart(props) {
             <div className={css.container}>
                 <div className={css.details}>
                     <table className={css.table}>
-                        <thead>
+                        <thead className={css.thead}>
                             <th>Pizza</th>
                             <th>Name</th>
                             <th>Size</th>

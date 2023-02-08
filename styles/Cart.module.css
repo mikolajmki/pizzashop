@@ -7,11 +7,23 @@
 
 .table {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-collapse: separate;
     border-spacing: 1rem;
     background: var(--cartBack);
     box-shadow: var(--shadow);
     border-radius: 15px;
+}
+
+.thead {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
 .tbody > tr > td {
@@ -43,8 +55,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    height: 16rem;
     padding: 1.6rem;
     background: var(--cartBack);
     box-shadow: var(--shadow);
@@ -74,7 +86,9 @@
 }
 
 .buttons {
+    margin-top: 1rem;
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
