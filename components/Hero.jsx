@@ -28,9 +28,6 @@ export default function Hero(props) {
                     Get started
                 </button>
             </div>
-            <div className={css.rightSide}>
-                1
-            </div>
             <div className={css.right}>
                 <div className={css.imageContainer}>
                     <Image src={HeroImage} alt="" layout="intrinsic"/>

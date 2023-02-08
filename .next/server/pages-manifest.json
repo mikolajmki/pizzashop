@@ -1,13 +1,7 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/api/order": "pages/api/order.js",
-  "/cart": "pages/cart.html",
-  "/api/stripe": "pages/api/stripe.js",
-  "/success": "pages/success.html",
-  "/order/[id]": "pages/order/[id].js",
   "/_document": "pages/_document.js",
-  "/pizza/[slug]": "pages/pizza/[slug].js",
-  "/": "pages/index.js",
-  "/404": "pages/404.html"
+  "/order/[id]": "pages/order/[id].js",
+  "/": "pages/index.js"
 }
