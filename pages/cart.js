@@ -73,9 +73,10 @@ export default function Cart(props) {
                             <th>Price</th>
                             <th>Quantity</th>
                             <th>Total</th>
+                            <th></th>
                         </thead>
                         <tbody className={css.tbody}>
-                            {cartData.pizzas.length > 0 && (
+                            {cartData.pizzas.length > 0 ? (
                                 cartData.pizzas.map((pizza, index) => {
                                     const src = urlFor(pizza.image).url();
                                     return (
@@ -99,7 +100,7 @@ export default function Cart(props) {
                                         </tr>
                                     )
                                 })
-                            )}
+                            ) : <div className={css.thead}>Your cart is empty. Find a pizza for yourself!</div> }
                         </tbody>
                     </table>
 
