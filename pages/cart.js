@@ -100,7 +100,7 @@ export default function Cart(props) {
                                         </tr>
                                     )
                                 })
-                            ) : <div className={css.thead}>Your cart is empty. Find a pizza for yourself!</div> }
+                            ) : <tr style={{ justifyContent: 'start' }}>Your cart is empty. Find a pizza for yourself!</tr> }
                         </tbody>
                     </table>
 
