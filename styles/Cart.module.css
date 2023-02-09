@@ -1,37 +1,67 @@
 .container {
     padding: 2rem;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     grid-template-columns: 2.2fr 1fr;
     gap: 2rem;
 }
 
 .table {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    max-width: 70rem;
     border-collapse: separate;
     border-spacing: 1rem;
     background: var(--cartBack);
     box-shadow: var(--shadow);
     border-radius: 15px;
+    margin-bottom: auto;
+}
+
+.tbody {
+    width: 100%;
+
 }
 
 .thead {
     width: 100%;
+    padding: 1rem 0 1rem 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem;
+    gap: 1rem;
+    margin: 0 3rem 0 3rem;
+}
+
+.thead > th {
+    width: 8rem;
+}
+
+@media screen and (width < 450px) {
+    .thead, .tbody > tr {
+        align-items: center;
+        justify-content: center;
+        gap: 0rem;
+    }
 }
 
 .tbody > tr > td {
+    width: 8rem;
     text-align: center;
+    padding: 1rem;
+}
+
+.tbody > tr  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 0 3rem 0 3rem;
 }
 
 .tbody > tr > :nth-child(2) {
-    width: 15%;
     font-weight: bold;
     font-size: 1.1rem;
 }
@@ -56,7 +86,9 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    width: 30rem;
     justify-content: space-between;
+    gap: 1rem;
     padding: 1.6rem;
     background: var(--cartBack);
     box-shadow: var(--shadow);

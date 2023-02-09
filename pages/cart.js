@@ -64,7 +64,7 @@ export default function Cart(props) {
         <Layout>
             <Toaster/>
             <div className={css.container}>
-                <div className={css.details}>
+
                     <table className={css.table}>
                         <thead className={css.thead}>
                             <th>Pizza</th>
@@ -73,7 +73,6 @@ export default function Cart(props) {
                             <th>Price</th>
                             <th>Quantity</th>
                             <th>Total</th>
-                            <th></th>
                         </thead>
                         <tbody className={css.tbody}>
                             {cartData.pizzas.length > 0 && (
@@ -103,7 +102,7 @@ export default function Cart(props) {
                             )}
                         </tbody>
                     </table>
-                </div>
+
                 <div className={css.cart}>
                     <span>Cart: </span>
                     <div className={css.cartDetails}>
